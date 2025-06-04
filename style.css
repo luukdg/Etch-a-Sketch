@@ -31,10 +31,12 @@ body > div {
     justify-content: center;
     width: 640px;
     height: 640px;
+    border: 1px solid #000000;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .squareDiv {
-    border: 0.1px solid black;
+    border: 0px solid black;
 }
 .gridButton {
     align-items: center;
@@ -82,3 +84,5 @@ body > div {
     color: rgba(0, 0, 0, 0.65);
     transform: translateY(0);
 }
+
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
