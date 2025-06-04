@@ -22,14 +22,14 @@ function applyHoverColor () {
             if (div.style.backgroundColor) {
                 return;
             } else {
-                let randomColor = Math.floor(Math.random()*16777215).toString(16);
-                let rgbValue = "#" + randomColor
+                let color = ["#ff1d58", "#f75990", "#fff685", "#00DDFF", "#0049B7"];
+                let randomColor = color[Math.floor(Math.random() * color.length)];
+                let rgbValue = randomColor
                 div.style.backgroundColor = rgbValue;
-                div.style.opacity = 1;
             }
         });
 });
-}
+};
 
 // Button grid changing
 const button = document.querySelector(".gridButton");
