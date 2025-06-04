@@ -1,27 +1,38 @@
 * {
     box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 .buttonDiv {
     display: flex;
     justify-content: center;
     margin: 30px;
+    
 }
 
 .container {
+    box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 640px;
+    height: 640px;
 }
 
 .squareDiv {
-    border: 1px solid black;
-    height: 25px;
-    width: 25px;
+    border: 0.1px solid black;
 }
 
-.squareDiv:nth-child(16n + 1) {
-    width: 100% !important;
-    border: 0px;
-    height: 0px;
-}
